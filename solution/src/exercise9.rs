@@ -10,4 +10,23 @@
 // * Use a match expression to determine which color
 //   name to print
 
-fn main() {}
+enum Color {
+    Red,
+    Pink,
+    White,
+}
+
+fn pintcolor(color:Color) {
+    match color {
+        Color::Red => println!("Red"),
+        Color::Pink => println!("pink"),
+        Color::White => println!("white"),
+    }
+}
+    
+
+fn main() {
+
+    pintcolor(Color::White)
+
+}
