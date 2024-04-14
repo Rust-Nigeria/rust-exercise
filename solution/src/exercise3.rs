@@ -11,7 +11,10 @@
 // * Use the println macro to display messages to the terminal
 
 fn main() {
-    let fact = true;
+    let fact = true; // * Use a variable set to either true or false
+
+    // * Use an if..else block to determine which message to display
+    // * Use the println macro to display messages to the terminal
 
     if fact {
         println!("hello");
