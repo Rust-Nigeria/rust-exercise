@@ -8,9 +8,6 @@
 // * Use a function to display the result
 // * Use the "{:?}" token in the println macro to display the result
 
-
-
-
 // function to add two numbers together
 fn add(a: f64, b: f64) -> f64 {
     a + b

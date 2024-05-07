@@ -11,9 +11,8 @@
 // * Use an if expression to determine which person's info should be printed
 // * The name and colors should be printed using a function
 
-
 // * Use a struct for a persons age, name, and favorite color
-struct Person{
+struct Person {
     age: i32,
     name: String,
     favorite_color: String,
@@ -24,20 +23,19 @@ struct Person{
 // * Use an if expression to determine which person's info should be printed
 // * The name and colors should be printed using a function
 
-
 fn main() {
     let people = vec![
-        Person{
+        Person {
             age: 10,
             name: "John".to_string(),
             favorite_color: "Red".to_string(),
         },
-        Person{
+        Person {
             age: 11,
             name: "Jane".to_string(),
             favorite_color: "Green".to_string(),
         },
-        Person{
+        Person {
             age: 9,
             name: "Doe".to_string(),
             favorite_color: "Blue".to_string(),

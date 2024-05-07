@@ -10,25 +10,26 @@
 // * Create a function to display the id number, with the struct as a parameter
 
 #[derive(Debug)]
-struct Quantity{
+struct Quantity {
     grocery: Box<str>,
     quantity: i32,
     id: i32,
-
 }
 
-fn display_quantity(grocery:&Quantity){
-    println!("{:#?} {:?} {:?}",grocery.grocery,grocery.quantity,grocery.id);
+fn display_quantity(grocery: &Quantity) {
+    println!(
+        "{:#?} {:?} {:?}",
+        grocery.grocery, grocery.quantity, grocery.id
+    );
 }
 
 fn main() {
-   let grocery = Quantity {
-    grocery :"garri".to_string().into(),
-    quantity : 1,
-    id : 4,
-
-   };
-   display_quantity(&grocery);
-   display_quantity(&grocery);
-   display_quantity(&grocery);
+    let grocery = Quantity {
+        grocery: "garri".to_string().into(),
+        quantity: 1,
+        id: 4,
+    };
+    display_quantity(&grocery);
+    display_quantity(&grocery);
+    display_quantity(&grocery);
 }

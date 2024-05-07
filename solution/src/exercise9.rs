@@ -16,17 +16,14 @@ enum Color {
     White,
 }
 
-fn pintcolor(color:Color) {
+fn pintcolor(color: Color) {
     match color {
         Color::Red => println!("Red"),
         Color::Pink => println!("pink"),
         Color::White => println!("white"),
     }
 }
-    
 
 fn main() {
-
     pintcolor(Color::White)
-
 }

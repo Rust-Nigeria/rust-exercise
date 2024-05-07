@@ -14,10 +14,7 @@ fn cooor() -> (i32, i32) {
     (4, 6)
 }
 
-
-
 fn main() {
-
     // * Destructure the return value into two variables
     let (x, y) = cooor();
 
@@ -30,4 +27,3 @@ fn main() {
         println!("y is equal to 5");
     }
 }
-

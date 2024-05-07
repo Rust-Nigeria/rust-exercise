@@ -16,5 +16,4 @@ fn main() {
         println!("{}", countdown);
         countdown -= 1;
     }
-
 }

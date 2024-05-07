@@ -13,7 +13,7 @@ fn main() {
     let mut iter = 1;
 
     loop {
-        println!("{}", iter + 1); 
+        println!("{}", iter + 1);
         iter += 1;
 
         if iter == 4 {

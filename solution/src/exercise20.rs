@@ -16,4 +16,44 @@
 //   * For the Ok variant, print any message you want
 //   * For the Err variant, print out the error message
 
-fn main() {}
+
+#[derive(Debug)]
+struct Adult {
+    name: String,
+    age: u8,
+}
+
+impl Adult{
+    fn new (&self) -> Result<Self,&str>{
+        if self.age >= 21 {
+            Ok(Self{
+                name: self.name.to_string(),
+                age: self.age,
+            })
+        }else{
+            Err("The person is under 21")
+        }
+
+    }
+}
+//   * The Err variant should contain a String (or &str) that explains why
+
+fn main() {
+    let adult = Adult{
+        name: "John".to_string(), 
+        age: 20
+    };
+    match adult.new() {
+        Ok(adult) => println!("{} is {} years old", adult.name, adult.age),
+        Err(err) => println!("Error: {}", err),
+    }
+
+  let child = Adult{
+    name: "Jane".to_string(), 
+    age: 21};
+
+    match child.new(){
+        Ok(adult) => println!("{} is {} years old", adult.name, adult.age),
+        Err(err) => println!("Error: {}", err),
+    }
+}
